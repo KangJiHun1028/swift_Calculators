@@ -15,12 +15,6 @@
                 return firstNumber - secondNumber
             case "*":
                 return firstNumber * secondNumber
-            case "/":
-                if secondNumber != 0 {
-                    return firstNumber / secondNumber
-                } else {
-                    return nil
-                }
             default:
                 return nil
         }
@@ -44,7 +38,7 @@ if let result = calculator.calculate(operator: operatorString, firstNumber: firs
 
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 911}</string>
+			<string>{0, 722}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
