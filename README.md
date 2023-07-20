@@ -9,5 +9,5 @@
     * Calculator 클래스를 이용하여 계산기 객체 calculator를 생성합니다.
     * operatorString, firstNumber, secondNumber에 각각 덧셈을 나타내는 "+", 5.0, 3.0을 할당합니다.
     * calculator의 calculate 메서드를 호출하여 사칙연산 결과를 계산하고, 옵셔널 바인딩을 사용하여 결과를 확인합니다.
-    * 결과가 nil이 아니라면 "결과: [계산 결과]"를 출력하고, nil이라면 "잘못된 연산자 또는 0으로 나누기입니다."를 출력합니다.
+    * 결과가 nil이 아니라면 "결과: [계산 결과]"를 출력하고, nil이라면 "잘못된 연산자입니다."를 출력합니다.
 위 예시를 실행하면 operatorString가 "+"이고, firstNumber가 5.0이며, secondNumber가 3.0일 때, 덧셈 연산을 수행하여 "결과: 8.0"이 출력됩니다.
