@@ -7,42 +7,55 @@
 		<dict>
 			<key>ModifiedContent</key>
 			<string>class Calculator {
-    func calculate(operator: String, firstNumber: Double, secondNumber: Double) -&gt; Double? {
-        switch `operator` {
-            case "+":
-                return firstNumber + secondNumber
-            case "-":
-                return firstNumber - secondNumber
-            case "*":
-                return firstNumber * secondNumber
-            default:
-                return nil
+    func add(_ num1: Double, _ num2: Double) -&gt; Double {
+        return num1 + num2
+    }
+    
+    func subtract(_ num1: Double, _ num2: Double) -&gt; Double {
+        return num1 - num2
+    }
+    
+    func multiply(_ num1: Double, _ num2: Double) -&gt; Double {
+        return num1 * num2
+    }
+    
+    func divide(_ num1: Double, _ num2: Double) -&gt; Double? {
+        if num2 != 0 {
+            return num1 / num2
+        } else {
+            return nil
         }
     }
 }
 
 let calculator = Calculator()
-let operatorString = "+"
-let firstNumber = 5.0
-let secondNumber = 3.0
 
-if let result = calculator.calculate(operator: operatorString, firstNumber: firstNumber, secondNumber: secondNumber) {
-    print("결과: \(result)")
+// 덧셈 예시
+let resultAddition = calculator.add(5.0, 3.0)
+print("덧셈 결과: \(resultAddition)")
+
+// 뺄셈 예시
+let resultSubtraction = calculator.subtract(5.0, 3.0)
+print("뺄셈 결과: \(resultSubtraction)")
+
+// 곱셈 예시
+let resultMultiplication = calculator.multiply(5.0, 3.0)
+print("곱셈 결과: \(resultMultiplication)")
+
+// 나눗셈 예시
+if let resultDivision = calculator.divide(5.0, 3.0) {
+    print("나눗셈 결과: \(resultDivision)")
 } else {
-    print("잘못된 연산자 또는 0으로 나누기입니다.")
+    print("나눗셈 오류: 0으로 나눌 수 없습니다.")
 }
-
-
-
-
-
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 722}</string>
+			<string>{0, 967}</string>
 			<key>OriginalContent</key>
-			<string></string>
+			<string>
+</string>
 			<key>OriginalRange</key>
-			<string>{0, 0}</string>
+			<string>{0, 1}</string>
 		</dict>
 	</array>
 	<key>File</key>
